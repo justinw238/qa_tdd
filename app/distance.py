@@ -17,7 +17,7 @@ class Distance():
 			y2 = float(y2)
 		except ValueError:
 			raise ValueError("Invalid Input")
-		#result = math.sqrt((self.x2 - self.x1)**2 + (self.y2 - self.y1)**2)
+	
 		
 		result = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 		return result
