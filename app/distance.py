@@ -1,15 +1,10 @@
 import math
 
 class Distance():
-	def __init__(self):
-		#self.x1 = 0
-		#self.x2 = 0
-		#self.y1 = 0
-		#self.y2 = 0
-		pass
-	
+	#take in two points, and output the distance between them
 	def distance(self, x1, y1, x2, y2):
 		
+		#make sure they are value input
 		try:
 			x1 = float(x1)
 			x2 = float(x2)
@@ -18,7 +13,6 @@ class Distance():
 		except ValueError:
 			raise ValueError("Invalid Input")
 	
-		
-		result = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-		return result
+		#return the distance
+		return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 		
