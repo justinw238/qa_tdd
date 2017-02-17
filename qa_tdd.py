@@ -1,7 +1,17 @@
 from app.distance import Distance
 
-def doChoice(choice):
-	pass
+def doDistance(choice):
+	dist = Distance()
+	x1 = input("Enter point X1: ")
+	x2 = input("Enter point X2: ")
+	y1 = input("Enter point Y1: ")
+	y2 = input("Enter point Y2: ")
+	
+	result = dist.distance(x1, x2, y1, y2)
+
+	print("Distance is: ", result)	
+	print()
+	
 	
 def main():
 	choice = -1
@@ -18,16 +28,7 @@ def main():
 				print("Invalid choice.")
 		
 		if choice == '4':
-			dist = Distance()
-			x1 = input("Enter point X1: ")
-			x2 = input("Enter point X2: ")
-			y1 = input("Enter point Y1: ")
-			y2 = input("Enter point Y2: ")
-		
-			result = dist.distance(x1, x2, y1, y2)
-			
-			print("Distance is", result)
-			print()
+			result = doDistance(choice)
 			
 		choice = -1
 if __name__ == '__main__':

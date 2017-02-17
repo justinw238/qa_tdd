@@ -16,8 +16,5 @@ class Distance():
 		except ValueError:
 			raise ValueError("Invalid Input")
 		
-		try:
-			return math.sqrt(self.x1 * self.x2 + self.y1 * self.y2)
-		except TypeError:
-			raise TypeError("Invalid input")
-	
+		return math.sqrt(self.x1 * self.x2 + self.y1 * self.y2)
+		
