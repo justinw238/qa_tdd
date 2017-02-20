@@ -27,7 +27,7 @@ def main():
 			if choice not in choice_list:
 				print("Invalid choice.")
 		
-		if choice == '4':
+		if choice == '3':
 			result = doDistance(choice)
 		if choice == '0':
 			return
