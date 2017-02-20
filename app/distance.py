@@ -4,7 +4,7 @@ class Distance():
 	#take in two points, and output the distance between them
 	def distance(self, x1, y1, x2, y2):
 		
-		#make sure they are value input
+		#make sure they are floats
 		try:
 			x1 = float(x1)
 			x2 = float(x2)
