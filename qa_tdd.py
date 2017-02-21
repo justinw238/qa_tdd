@@ -9,8 +9,9 @@ def doDistance(choice):
 	
 	result = dist.distance(x1, y1, x2, y2)
 
+	#print(result)
 	print("Distance is: ", result)	
-	print()
+	print("")
 	
 	
 def main():
