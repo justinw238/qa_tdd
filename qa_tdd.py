@@ -1,5 +1,5 @@
 from app.distance import Distance
-from verifyemail import VerifyEmail
+from app.verifyemail import VerifyEmail
 
 
 def doDistance(choice):
