@@ -1,5 +1,19 @@
+from app.bmi import BMI
 from app.distance import Distance
 from app.verifyemail import VerifyEmail
+
+
+def getBMI():
+    bodymass = BMI()
+    weight = (input("Please enter your weight in pounds: "))
+    height = (input("Please enter your height in inches: "))
+    output = float((bodymass.bmi(weight,height)))
+    if output < 18.5:
+        print("Your BMI category is Underweight and your BMI is: ", "%.1f" % output)
+    elif output > 18.5 and output < 25.0:
+        print("Your BMI category is Normal Weight and your BMI is: ", "%.1f" % output)
+    elif output > 25:
+        print("Your BMI category is Overweight and your BMI is: ", "%.1f" % output)
 
 
 def doDistance(choice):
@@ -41,6 +55,9 @@ def main():
             if choice not in choice_list:
                 print("Invalid choice.")
 
+                
+        if choice == '1':
+            getBMI()
         if choice == '3':
             result = doDistance(choice)
         if choice == '4':
