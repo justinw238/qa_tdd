@@ -10,5 +10,5 @@ class BMI:
         weight *= 0.45
         height *= 0.025
         squared_height = height * height
-        BMI = weight/squared_height
-        return ("%.1f" % BMI)
+        body_mass_index = "%.1f" % (weight/squared_height)
+        return body_mass_index
