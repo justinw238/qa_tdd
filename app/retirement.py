@@ -1,10 +1,5 @@
 class Retirement():
 
-	#age = input("Enter your age: ")
-	#salary = input("Enter your annual salary: ")
-	#saving = input("Enter your percentage saved: ")
-	#goal = input("Enter your retirement savings goal: ")
-
 	def retirement(self, age, salary, saving, goal):
 
 		try:
