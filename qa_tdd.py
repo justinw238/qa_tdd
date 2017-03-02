@@ -16,7 +16,7 @@ def getBMI():
         print("Your BMI category is Overweight and your BMI is: ", "%.1f" % output)
 
 
-def doDistance(choice):
+def doDistance():
     dist = Distance()
     x1 = input("Enter point X1: ")
     y1 = input("Enter point Y1: ")
@@ -59,7 +59,7 @@ def main():
         if choice == '1':
             getBMI()
         if choice == '3':
-            result = doDistance(choice)
+            result = doDistance()
         if choice == '4':
             checkEmail()
         if choice == '0':
