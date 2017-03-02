@@ -1,4 +1,5 @@
 from app.bmi import BMI
+from app.retirement imprt Retirement
 from app.distance import Distance
 from app.verifyemail import VerifyEmail
 
@@ -16,6 +17,21 @@ def getBMI():
         print("Your BMI category is Overweight and your BMI is: ", "%.1f" % output)
 
 
+def determineRetirement():
+    retire = Retirement()
+    age = input("Enter your age: ")
+	salary = input("Enter your annual salary: ")
+	saving = input("Enter your percentage saved: ")
+	goal = input("Enter your retirement savings goal: ")
+
+    result = retire.Retirement(age, salary, saving, goal)
+
+    if (result < 100):
+        print("Goal met at ", "%d" % age, ".")
+    else
+        print("Goal not met.")
+
+        
 def doDistance():
     dist = Distance()
     x1 = input("Enter point X1: ")
@@ -58,6 +74,8 @@ def main():
                 
         if choice == '1':
             getBMI()
+        if choice == '2':
+            determineRetirement()
         if choice == '3':
             result = doDistance()
         if choice == '4':
