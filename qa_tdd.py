@@ -1,5 +1,5 @@
 from app.bmi import BMI
-from app.retirement imprt Retirement
+from app.retirement import Retirement
 from app.distance import Distance
 from app.verifyemail import VerifyEmail
 
