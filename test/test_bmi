@@ -12,5 +12,8 @@ class TDD(unittest.TestCase):
         result = self.body_mass.bmi(170,73)
         self.assertEqual('23.0',result)
 
+    def test_bmi_accepts_positive_values(self):
+        self.assertRaises(ValueError,self.body_mass.bmi, -1, 63)
+
     def tearDown(self):
         self.body_mass = None
