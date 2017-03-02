@@ -1,5 +1,5 @@
 import unittest
-from retirement import Retirement
+from app.retirement import Retirement
 
 class TDD(unittest.TestCase):
 	def setUp(self):
