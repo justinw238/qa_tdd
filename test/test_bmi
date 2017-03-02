@@ -1,5 +1,5 @@
 import unittest
-from BMI import BMI
+from app.bmi import BMI
 
 
 class TDD(unittest.TestCase):
