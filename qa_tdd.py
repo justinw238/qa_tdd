@@ -1,4 +1,5 @@
 import os
+os.system('cls' if os.name == 'nt' else 'clear')
 
 from app.bmi import BMI
 from app.retirement import Retirement
