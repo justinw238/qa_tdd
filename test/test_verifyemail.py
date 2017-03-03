@@ -1,5 +1,5 @@
 import unittest
-from app.verifyemail import VerifyEmail
+from ..app.verifyemail import VerifyEmail
 
 
 class TDD(unittest.TestCase):
