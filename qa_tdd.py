@@ -1,3 +1,5 @@
+import os
+
 from app.bmi import BMI
 from app.retirement import Retirement
 from app.distance import Distance
@@ -19,19 +21,19 @@ def getBMI():
 
 def determineRetirement():
     retire = Retirement()
-    age = input("Enter your age: ")
-	salary = input("Enter your annual salary: ")
-	saving = input("Enter your percentage saved: ")
-	goal = input("Enter your retirement savings goal: ")
+    age = (input("Enter your age: "))
+    salary = (input("Enter your annual salary: "))
+    saving = (input("Enter your percentage saved: "))
+    goal = (input("Enter your retirement savings goal: "))
 
-    result = retire.Retirement(age, salary, saving, goal)
+    result = retire.retirement(age, salary, saving, goal)
 
     if (result < 100):
-        print("Goal met at ", "%d" % age, ".")
-    else
+        print("Goal met at " + repr(result) + ".")
+    else:
         print("Goal not met.")
 
-        
+
 def doDistance():
     dist = Distance()
     x1 = input("Enter point X1: ")
@@ -56,6 +58,10 @@ def checkEmail():
         print("")
     return
 
+def clean_up():
+    input("\nPress Enter to continue...")
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def main():
     choice = -1
@@ -71,16 +77,21 @@ def main():
             if choice not in choice_list:
                 print("Invalid choice.")
 
-                
+
         if choice == '1':
             getBMI()
+            clean_up()
         if choice == '2':
             determineRetirement()
+            clean_up()
         if choice == '3':
             result = doDistance()
+            clean_up()
         if choice == '4':
             checkEmail()
+            clean_up()
         if choice == '0':
+            os.system('cls' if os.name == 'nt' else 'clear')
             return
 
         choice = -1
