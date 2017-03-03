@@ -1,5 +1,5 @@
 import unittest
-from app.distance import Distance
+from ..app.distance import Distance
 
 class TDD(unittest.TestCase):
 	def setUp(self):
