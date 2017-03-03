@@ -8,7 +8,7 @@ class TDD(unittest.TestCase):
 	def test_retirment_returns_correct_results(self):
 		self.assertEqual(34, self.retire.retirement(25 ,50000, 10, 50000))
 		self.assertEqual(54, self.retire.retirement(50 ,50000, 20, 50000))
-		self.assertEqual(101, self.retire.retirement(99, 100, 5, 100000))
+		self.assertEqual(100, self.retire.retirement(99, 100, 5, 100000))
 
 	def test_retirement_non_int_input(self):
 		self.assertRaises(ValueError, self.retire.retirement, 38, 'int', 25, 58000)
